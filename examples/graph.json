@@ -1,0 +1,95 @@
+{
+  "schema_version": "1.0",
+  "project": "sample-feature",
+  "contract": {
+    "goal": "Add a documented export endpoint with regression coverage.",
+    "constraints": [
+      "Preserve existing API compatibility.",
+      "Do not change authentication policy."
+    ],
+    "done_when": [
+      "Endpoint contract is documented.",
+      "Relevant automated tests pass.",
+      "No unrelated files are changed."
+    ],
+    "out_of_scope": [
+      "Changing the authentication system."
+    ]
+  },
+  "nodes": [
+    {
+      "id": "N1",
+      "title": "Inspect current API conventions",
+      "goal": "Identify endpoint patterns, error handling, and relevant tests.",
+      "inputs": [
+        "Repository instructions",
+        "Existing API implementation"
+      ],
+      "outputs": [
+        "API convention notes"
+      ],
+      "depends_on": [],
+      "write_scope": [
+        "docs/notes/api-conventions.md"
+      ],
+      "acceptance": [
+        "Relevant conventions and files are recorded with paths."
+      ],
+      "risk": "low",
+      "status": "pending"
+    },
+    {
+      "id": "N2",
+      "title": "Specify export endpoint behaviour",
+      "goal": "Define request, response, errors, and compatibility expectations.",
+      "inputs": [
+        "API convention notes"
+      ],
+      "outputs": [
+        "Endpoint contract"
+      ],
+      "depends_on": [
+        {
+          "node": "N1",
+          "because": "The endpoint specification must follow the repository's API conventions."
+        }
+      ],
+      "write_scope": [
+        "docs/api/export-endpoint.md"
+      ],
+      "acceptance": [
+        "Request/response and error behaviour are documented."
+      ],
+      "risk": "low",
+      "status": "pending"
+    },
+    {
+      "id": "N3",
+      "title": "Implement endpoint and regression tests",
+      "goal": "Implement the documented endpoint and add tests for expected behaviour.",
+      "inputs": [
+        "Endpoint contract"
+      ],
+      "outputs": [
+        "Endpoint implementation",
+        "Regression tests"
+      ],
+      "depends_on": [
+        {
+          "node": "N2",
+          "because": "Implementation and tests depend on the agreed endpoint contract."
+        }
+      ],
+      "write_scope": [
+        "src/api/export.py",
+        "tests/test_export.py"
+      ],
+      "acceptance": [
+        "Relevant tests pass.",
+        "Implementation matches the endpoint contract."
+      ],
+      "risk": "medium",
+      "status": "pending"
+    }
+  ]
+}
