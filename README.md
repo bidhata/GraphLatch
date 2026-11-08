@@ -235,6 +235,16 @@ Run the package checks before submitting a change:
 ./check.sh
 ```
 
+## Created by
+
+GraphLatch is created and maintained by **Krish Paul** ([@bidhata](https://github.com/bidhata)).
+
+- **Website:** [krishnendu.com](https://krishnendu.com)
+- **Email:** [me@krishnendu.com](mailto:me@krishnendu.com)
+- **GitHub:** [@bidhata](https://github.com/bidhata)
+
+For project questions, ideas, or collaboration, please open a [GitHub issue](https://github.com/bidhata/GraphLatch/issues) or get in touch by email.
+
 ## License
 
 GraphLatch is released under the [MIT License](LICENSE).
@@ -245,6 +255,6 @@ GraphLatch is released under the [MIT License](LICENSE).
 
 **GraphLatch** · Orchestrate deliberately. Verify independently.
 
-[GitHub repository](https://github.com/bidhata/GraphLatch)
+[GitHub repository](https://github.com/bidhata/GraphLatch) · [Website](https://krishnendu.com) · [Email](mailto:me@krishnendu.com)
 
 </div>

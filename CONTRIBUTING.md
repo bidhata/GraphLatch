@@ -17,3 +17,9 @@ Prefer changes backed by a concrete failure mode, reproducible example, or meani
 ## Durable rules
 
 A proposed mandatory rule should identify the repeated failure it prevents, the evidence supporting it, and the trade-offs it introduces. GraphLatch prefers a small number of enforceable principles over a long list of brittle instructions.
+
+
+## Project maintainer
+
+GraphLatch is created and maintained by **Krish Paul** ([@bidhata](https://github.com/bidhata)).
+For maintainer contact and project information, visit [krishnendu.com](https://krishnendu.com) or email [me@krishnendu.com](mailto:me@krishnendu.com).

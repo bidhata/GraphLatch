@@ -4,9 +4,11 @@ description: Use for substantial multi-step engineering work that benefits from 
 license: MIT
 compatibility: Works with coding agents that can inspect files and run project commands. Parallel agents and worktrees are optional capabilities; serialize tasks when unavailable.
 metadata:
-  author: bidhata
+  author: "Krish Paul (@bidhata)"
   project: GraphLatch
   version: "1.0.0"
+  website: "https://krishnendu.com"
+  contact: "me@krishnendu.com"
 ---
 
 # GraphLatch
